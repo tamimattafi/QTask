@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vk_logo">vk_logo</string>
+    <string name="app_logo">app_logo</string>
+    <string name="icon_menu">icon_menu</string>
+    <string name="friends_icon">friends_icon</string>
+    <string name="header_icon">header_icon</string>
+    <string name="placeholder">placeholder</string>
+</resources>

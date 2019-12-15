@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">QTask</string>
+    <integer name="com_vk_sdk_AppId">7247754</integer>
+    <string name="vk_secure_key">4N2XrZXcTuw1OLkKIeXy</string>
+    <string name="vk_service_token">386c0d48386c0d48386c0d481138029ac23386c386c0d4865998c29271e82b779176b82</string>
+    <string name="continue_with_vk">Continue With VK</string>
+    <string name="login_description">The ultimate app to keep your life organized and your friends in touch!</string>
+    <string name="login_error">Login failed, please try again!</string>
+    <string name="timeline">Timeline</string>
+    <string name="error_loading_tasks">Error loading tasks</string>
+    <string name="something_went_wrong_while_trying_to_load_tasks_please_refresh_the_page_and_try_again">Something went wrong while trying to load tasks. Please refresh the page and try again.</string>
+    <string name="no_tasks">No Tasks</string>
+    <string name="no_tasks_description">It seems like you have no tasks to display</string>
+    <string name="add_task">Add Task</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="members">Members</string>
+    <string name="date">Date</string>
+    <string name="members_can_edit">Members Can Edit?</string>
+    <string name="important_task">Important Task?</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_task_error">Something went wrong while trying to add a task. Please try again.</string>
+    <string name="retry">Retry</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="view_task">View Task</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_add_task"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/background_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:paddingTop="14dp"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:minHeight="140dp"
+                    android:gravity="start"
+                    android:hint="@string/description"
+                    android:background="@drawable/background_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/friends"
+                    android:drawableEnd="@drawable/ic_edit"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:hint="@string/members"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/background_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_edit" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date"
+                    android:drawableEnd="@drawable/ic_edit"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:hint="@string/date"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/background_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_edit" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/canEdit"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:text="@string/members_can_edit"
+                android:layoutDirection="rtl"
+                style="@android:style/Widget.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="jelly_bean_mr1" />
+
+            <CheckBox
+                android:id="@+id/important"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:text="@string/important_task"
+                android:layoutDirection="rtl"
+                style="@android:style/Widget.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="jelly_bean_mr1" />
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_margin="8dp"
+                    android:textAllCaps="false"
+                    android:text="@string/cancel"
+                    android:textSize="16sp"
+                    android:background="@drawable/background_button_gray"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_margin="8dp"
+                    android:textAllCaps="false"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:background="@drawable/background_button_primary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
